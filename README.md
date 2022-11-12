@@ -1,5 +1,5 @@
 # pytorch-hub-docker
-### 아직 linux/ARM64 (ex: Mac M1, M2) 위에서만 돌아갑니다.
+### linux/ARM64 (ex: Mac M1, M2)
 
 1. Dockerhub 이용
 ```
@@ -8,7 +8,14 @@ docker pull cpprhtn/hub-kr
 docker run -i -t -p 50001:50001/tcp --name hub-kr cpprhtn/hub-kr
 ```
 
-2. 해당 레포의 Dockerfile 이용
+### linux/AMD64 (ex: window)
+```
+docker pull cpprhtn/hub-kr:window
+
+docker run -i -t -p 50001:50001/tcp --name hub-kr cpprhtn/hub-kr
+```
+
+2. 해당 레포의 Dockerfile 이용 (ARM/AMD 공용)
 ```
 docker build -t <name>:<version> .
 
@@ -38,5 +45,5 @@ Server running... press ctrl-c to stop.
 
 ### TODO
 - [ ] 로컬 볼륨에 hub의 *.md 연동
-- [ ] window 버전 Dockerfile 제작
+- [] window 버전 Dockerfile 제작
 
