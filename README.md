@@ -1,14 +1,15 @@
 # pytorch-hub-docker
-### linux/ARM64 (ex: Mac M1, M2)
+
 
 1. Dockerhub 이용
+##### linux/ARM64 (ex: Mac M1, M2)
 ```
 docker pull cpprhtn/hub-kr
 
 docker run -i -t -p 50001:50001/tcp --name hub-kr cpprhtn/hub-kr
 ```
 
-### linux/AMD64 (ex: window)
+##### linux/AMD64 (ex: Window)
 ```
 docker pull cpprhtn/hub-kr:window
 
