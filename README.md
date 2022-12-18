@@ -46,5 +46,5 @@ Server running... press ctrl-c to stop.
 
 ### TODO
 - [ ] 로컬 볼륨에 hub의 *.md 연동
-- [ ] window 버전 Dockerfile 제작
+- [x] window 버전 Dockerfile 제작
 
