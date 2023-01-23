@@ -48,3 +48,6 @@ Server running... press ctrl-c to stop.
 - [ ] 로컬 볼륨에 hub의 *.md 연동
 - [x] window 버전 Dockerfile 제작
 
+```
+docker run -it -p 50001:50001/tcp -v ./hub-kr:/hub-kr/_preview/_hub --name hub-kr cpprhtn/hub-kr
+```
