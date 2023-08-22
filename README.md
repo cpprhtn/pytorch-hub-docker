@@ -1,5 +1,12 @@
 # pytorch-hub-docker
 
+0. docker-compose 이용 (recommend)
+##### mac/window 모두 무관 (단 window는 파일 수정 즉시 반영이 안되는 문제 발생)
+```
+git clone https://github.com/cpprhtn/pytorch-hub-docker.git
+cd pytorch-hub-docker
+docker-compose up -d --build
+```
 
 1. Dockerhub 이용
 ##### linux/ARM64 (ex: Mac M1, M2)
@@ -45,8 +52,9 @@ Server running... press ctrl-c to stop.
 감사합니다.
 
 ### TODO
-- [ ] 로컬 볼륨에 hub의 *.md 연동
+- [x] 로컬 볼륨에 hub의 *.md 연동
 - [x] window 버전 Dockerfile 제작
+- [ ] 기존의 도커파일 work 프로세스들을 분리하여 매번 다시 다운로드 하지 않도록 수정 필요
 
 ```
 docker run -it -p 50001:50001/tcp -v ./hub-kr:/hub-kr/_preview/_hub --name hub-kr cpprhtn/hub-kr

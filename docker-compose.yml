@@ -3,14 +3,12 @@ version: "3.3"
 services:
   hub-kr:
     container_name: "pytorchkr"
-    build: ./hub-kr
+    build: .
     ports:
       - "50001:50001"
     volumes:
-      - ./hub-kr:/hub-kr/_preview
-#      - ./pytorch.kr:/hub-kr/_preview
+      - .:/hub-kr/_preview
 
-    restart: always
     networks:
       - local-net
 
